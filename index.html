@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>FrontEndTest</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <link rel="stylesheet" href="assets/css/media.css">
+        <script src="https://kit.fontawesome.com/52d81d373d.js"
+            crossorigin="anonymous"></script>
+        <script src="/script.js" defer></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.3.5/signature_pad.min.js"
+            integrity="sha512-kw/nRM/BMR2XGArXnOoxKOO5VBHLdITAW00aG8qK4zBzcLVZ4nzg7/oYCaoiwc8U9zrnsO9UHqpyljJ8+iqYiQ=="crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
+    </head>
+    <body>
+
+        <nav>
+            <img class="logo"
+                src="./assets/imgs/My-Claim-Group-Logo-White.png"
+                alt="">
+            <div class="flex-grow"></div>
+            <div id="hamburger" class="hamburger"><i id="hamburger-icon"
+                    class="fas fa-bars"></i></div>
+
+            <ul class="menu">
+                <li><a class="menu-item">Signature</a><div
+                        class="underline"></div></li>
+                <li><a class="menu-item">Sign Up</a><div
+                        class="underline"></div></li>
+                <li class="pipe"></li>
+            </ul>
+            <div class="contact">
+                <div id="phone-number" class="phone"><i class="fas
+                        fa-phone-alt"></i>0800 756
+                    3986</div>
+                <div id="email-address" class="email"><i class="far
+                        fa-envelope"></i>info@myclaimgroup.co.uk</div>
+            </div>
+
+
+        </nav>
+        <ul id="hamburger-menu" class="hamburger-menu">
+            <li><a class="menu-item-hamburger">Signature</a></li>
+            <li><a class="menu-item-hamburger">Sign Up</a></li>
+        </ul>
+        <section id="content">
+            <section class="signature user-form hidden">
+
+                <div class="flex-column">
+
+                    <canvas id="signature-pad" width="400" height="200"></canvas>
+                    <div class="flex-column_2">
+                        <p>sign above</p>
+                        <div class="flex-row">
+                            <button class="btn btn-alt" id="clear">Clear <i
+                                    class="fas fa-eraser"></i></button>
+                            <button class="btn btn-alt">Submit <i class="fas
+                                    fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+            <section class="sign-up user-form hidden">
+                <form id="user-form">
+
+                    <input type="text"
+                        name="firstName"
+                        id="firstname"
+                        placeholder="First Name"
+                        required>
+
+                    <input type="text"
+                        name="lastName"
+                        id="lastname"
+                        placeholder="Last Name"
+                        required>
+
+                    <button class="btn" type="submit">Submit <i class="fas
+                            fa-arrow-right"></i></button>
+                </form>
+            </section>
+
+        </section>
+
+
+        <footer>
+            <div class="container">
+                <div class="flex-footer">
+
+                    <p class="text">My Claim Group is a Trading name of Wisemann
+                        Law Limited
+                        a
+                        Limited Company Registered in England and Wales Company
+                        No:
+                        09411174. Authorised and Regulated by the Solicitors
+                        Regulation Authority 622271 Vat Number 212 1624 61. A
+                        full
+                        list of directors is available from the Companies
+                        Registered
+                        Office.</p>
+                    <div class="address">
+                        <h3>Address</h3><p>Unit 8, Ashbrook Office Park,
+                            Longstone
+                            Road, Heald Green, M22 5LB</p></div>
+                    <div class="legal">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li>Privacy Policy</li>
+                            <li>Modern UI Kit</li>
+                            <li>Framer UI Kit</li>
+                            <li>Gradients UI Kit</li>
+                        </ul>
+                    </div>
+                    <div class="logo-footer">
+                        <img src="./assets/imgs/My-Claim-Group-Logo-Black.jpg"
+                            alt="">
+                        <p>My claim group &copy; All rights reserved, 2021</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </body>
+</html>
