@@ -1,4 +1,4 @@
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 780px) {
   nav {
     padding: 0 20px;
   }
@@ -17,7 +17,6 @@
     color: var(--dark-color);
     font-weight: 1000;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    
   }
   nav .menu {
     display: none;
