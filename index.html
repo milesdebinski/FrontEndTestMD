@@ -46,10 +46,9 @@
             <div class="flex-grow"></div>
             <div id="hamburger" class="hamburger"><i id="hamburger-icon"
                     class="fas fa-bars"></i></div>
-
             <ul class="menu">
                 <li><a class="menu-item">Signature</a><div
-                        class="underline"></div></li>
+                        class="underline current"></div></li>
                 <li><a class="menu-item">Sign Up</a><div
                         class="underline"></div></li>
                 <li class="pipe"></li>
@@ -61,59 +60,64 @@
                 <div id="email-address" class="email"><i class="far
                         fa-envelope"></i>info@myclaimgroup.co.uk</div>
             </div>
-
-
         </nav>
+
         <ul id="hamburger-menu" class="hamburger-menu">
             <li><a class="menu-item-hamburger">Signature</a></li>
             <li><a class="menu-item-hamburger">Sign Up</a></li>
         </ul>
+
         <section id="content">
-            <section class="signature user-form hidden">
 
+            <section class="signature user-form">
+                <div class="thank-you thank-you-signature">
+                    <h3>Thank You!</h3>
+                    <p>Your signature has been sent.</p>
+                </div>
                 <div class="flex-column">
-
                     <canvas id="signature-pad" width="400" height="200"></canvas>
-                    <div class="flex-column_2">
+                    <div class="flex-column_items">
                         <p>sign above</p>
                         <div class="flex-row">
                             <button class="btn btn-alt" id="clear">Clear <i
                                     class="fas fa-eraser"></i></button>
-                            <button class="btn btn-alt">Submit <i class="fas
+                            <button class="btn btn-alt submit-signature"
+                                id="clear-submit">Submit
+                                <i class="fas
                                     fa-arrow-right"></i></button>
                         </div>
                     </div>
-
-
                 </div>
             </section>
-            <section class="sign-up user-form hidden">
-                <form id="user-form">
 
+            <section class="sign-up user-form hidden">
+                <div class="thank-you thank-you-sign-up">
+                    <h3>Thank You!</h3>
+                    <p>Your name has been sent.</p>
+                </div>
+                <form id="user-form">
+                    <p>Please provide your first name and last name.</p>
                     <input type="text"
                         name="firstName"
                         id="firstname"
                         placeholder="First Name"
                         required>
-
                     <input type="text"
                         name="lastName"
                         id="lastname"
                         placeholder="Last Name"
                         required>
 
-                    <button class="btn" type="submit">Submit <i class="fas
+                    <button class="btn submit-sign-up" type="submit">Submit <i
+                            class="fas
                             fa-arrow-right"></i></button>
                 </form>
             </section>
-
         </section>
-
 
         <footer>
             <div class="container">
                 <div class="flex-footer">
-
                     <p class="text">My Claim Group is a Trading name of Wisemann
                         Law Limited
                         a
@@ -146,7 +150,6 @@
                 </div>
             </div>
         </footer>
-
 
     </body>
 </html>

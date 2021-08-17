@@ -20,5 +20,5 @@ Our designers have said the following:
 2. The logo should NOT be hyperlinked-
 3. The page must not take longer than 2 seconds to load-
 4. It would be nice to see how users interact with the page, so can you implement https://hotjar.com-
-5. The page(s) must conform to WCAG (https://www.w3.org/WAI/standards-guidelines/wcag/) as it will be used by millions of people
-6. SEO is a high priority, can you add the relevant tags`
+5. The page(s) must conform to WCAG (https://www.w3.org/WAI/standards-guidelines/wcag/) as it will be used by millions of people-
+6. SEO is a high priority, can you add the relevant tags`-

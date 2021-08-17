@@ -1,6 +1,7 @@
 :root {
     --primary-color: #0601DD;
     --secondary-color: #00B6FF;
+    --interaction-color: #4632DA;
     --light-color: #f3f3f3;
     --dark-color: #001C38;
     --text-footer: rgba(255, 255, 255, 0.308);
@@ -65,7 +66,29 @@ textarea {
     gap: 5px;
 }
 .btn:hover {
-    background: var(--primary-color);
+    background: var(--interaction-color);
+}
+.thank-you {
+    width: 100%;
+    height: 100%;
+    background: var(--interaction-color);
+    position: absolute;
+    /* border-radius: 10px; */
+    opacity: 1;
+    transform: translateY(-100%);
+    transition: 250ms ease-in-out;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+
+}
+.thank-you.active {
+    transform: translateY(0);
 }
 
 /* Navbar */
@@ -188,10 +211,12 @@ nav .hamburger {
     background: url('../imgs/My-Claim-Group-Waves.svg') no-repeat center center/cover;
     height: 90vh;
     width: 100%; 
+    ;
 }
 #content .user-form {
     transition: 300ms ease-in-out;
     z-index: 1;
+    overflow: hidden;
 }
 #content .user-form.hidden {
     
@@ -202,6 +227,7 @@ nav .hamburger {
     pointer-events: none;
     
 }
+
 .sign-up {
     margin-top: 45px;
     position: absolute;
@@ -214,6 +240,7 @@ nav .hamburger {
     transform: translate(-50%, -50%);
     width: 70%;
     max-width: 400px;
+    border-radius: 10px;
 }
 .sign-up form {
     text-align: center;
@@ -226,6 +253,12 @@ nav .hamburger {
     padding: 25px 25px;
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.12);
     width: 100%;
+}
+
+.sign-up form p {
+    color:#b9b9b9;
+    margin: 0px 0 10px;
+    font-size: 12px;
 }
 .sign-up form input {
     height: 30px;
@@ -318,20 +351,19 @@ footer .flex-footer .logo-footer img{
     background: #fff;
     border-radius: 10px;
 }
-.flex-column_2 {
+.flex-column_items {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.flex-column_2 p {
+.flex-column_items p {
     color:#b9b9b9;
+    margin-top: 6px;
     font-size: 12px;
 }
 .flex-row {
     display: flex;
-    /* justify-content: space-around; */
-
 }
 canvas#signature-pad {
     background: #efefef;
