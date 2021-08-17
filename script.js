@@ -26,7 +26,7 @@ const menuInteractions = () => {
       menuUnderline[index].classList.remove("active");
     })
   );
-  // Add/remove current menu underline
+  // Add/remove current menu underline (hamburger menu)
   menuItemsHamburger.forEach((item, index) => {
     item.addEventListener("click", () => {
       setTimeout(() => {
@@ -44,6 +44,7 @@ const menuInteractions = () => {
       });
     });
   });
+  // Add/remove current menu underline
   menuItems.forEach((item, index) => {
     item.addEventListener("click", () => {
       setTimeout(() => {
@@ -53,7 +54,6 @@ const menuInteractions = () => {
         index !== i && el.classList.add("hidden");
       });
       menuUnderline[index].classList.add("current");
-
       menuUnderline.forEach((el, i) => {
         index !== i && el.classList.remove("current");
       });
@@ -74,9 +74,10 @@ const contactInteractions = () => {
   });
 };
 
-// Signature logic
+// Signature pad
 const signatureLogic = () => {
   var canvas = document.getElementById("signature-pad");
+
   function resizeCanvas() {
     var ratio = Math.max(window.devicePixelRatio || 1, 1);
     canvas.width = canvas.offsetWidth * ratio;
@@ -99,9 +100,10 @@ const signatureLogic = () => {
       }, 300);
     });
 };
-// get submited data
+// Get submited data
 const getSubmitedData = () => {
   const userForm = document.getElementById("user-form");
+
   userForm.addEventListener("submit", (event) => {
     event.preventDefault();
     let firstName = document.getElementById("firstname").value;
@@ -124,7 +126,7 @@ const thankYouOverlaySignature = () => {
     }, 1900);
   });
 };
-// "Thank you"overlay sign up
+// "Thank you" overlay sign up
 const thankYouOverlaySignUp = () => {
   const submitSignUp = document.querySelector(".submit-sign-up");
   const thankYouSignUp = document.querySelector(".thank-you-sign-up");
