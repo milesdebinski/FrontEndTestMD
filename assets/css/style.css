@@ -248,7 +248,7 @@ nav .hamburger {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 255, 255, 0.98);
+    background: #fff;
     border-radius: 10px;
     padding: 25px 25px;
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.12);
