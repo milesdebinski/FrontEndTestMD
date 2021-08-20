@@ -135,7 +135,7 @@ nav .menu .underline {
 }
 nav .menu .underline.active,
 nav .menu .underline.current {
-    margin-top: 15px;
+    margin-top: 17px;
     background: #fff;
 }
 nav .menu li {
