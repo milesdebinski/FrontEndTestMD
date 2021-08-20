@@ -190,7 +190,7 @@ nav .hamburger {
     z-index:4;
 }
 .hamburger-menu.active {
-    top: 110px;
+    top: 108px;
     transform:scaleY(1);
 }
 .hamburger-menu li {
