@@ -185,12 +185,12 @@ nav .hamburger {
     left: 0px;
     width: 100%;
     text-align: center;
-    transform:scaleY(0.0);
+    transform:scaleY(0.3);
     transition: ease-in-out 250ms;
     z-index:4;
 }
 .hamburger-menu.active {
-    top: 108px;
+    top: 109px;
     transform:scaleY(1);
 }
 .hamburger-menu li {
