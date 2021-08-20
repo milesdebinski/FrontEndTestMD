@@ -36,7 +36,7 @@ ul {
 input,
 textarea {
     width:100%;
-    display:block 
+    display:block;
 }
  
 /* Utility */
@@ -208,6 +208,7 @@ nav .hamburger {
     position: relative;
     background: url('../imgs/My-Claim-Group-Waves.svg') no-repeat center center/cover;
     height: 90vh;
+    min-height: 500px;
     width: 100%; 
 }
 .content .user-form {

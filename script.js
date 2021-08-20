@@ -102,7 +102,7 @@ const signatureLogic = () => {
 };
 // Get submited data
 const getSubmitedData = () => {
-  const userForm = document.getElementById("user-form");
+  const userForm = document.getElementById("user-form-sign-up");
 
   userForm.addEventListener("submit", (event) => {
     event.preventDefault();
